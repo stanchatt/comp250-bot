@@ -1,2 +1,2 @@
 # comp250-bot
-Base repository for COMP250 assignment 1, task 2
+Bot tournament instructions will be released here later in the study block.
