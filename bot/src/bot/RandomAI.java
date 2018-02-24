@@ -5,7 +5,6 @@
 package bot;
 
 import ai.core.AI;
-import ai.core.AIWithComputationBudget;
 import ai.core.ParameterSpecification;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,9 +15,12 @@ import rts.units.UnitTypeTable;
  *
  * @author santi
  */
-public class RandomAI extends AIWithComputationBudget {    
-    public RandomAI(UnitTypeTable utt, int timeBudget) {
-    	super(timeBudget, -1);
+public class RandomAI extends AI {    
+    public RandomAI(UnitTypeTable utt) {
+    }
+    
+
+    public RandomAI() {
     }
     
     
@@ -29,7 +31,7 @@ public class RandomAI extends AIWithComputationBudget {
     
     @Override
     public AI clone() {
-        return new RandomAI(null, getTimeBudget());
+        return new RandomAI();
     }
    
     
