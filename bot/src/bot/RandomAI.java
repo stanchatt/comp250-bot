@@ -36,7 +36,6 @@ public class RandomAI extends AIWithComputationBudget {
     @Override
     public PlayerAction getAction(int player, GameState gs) {
         try {
-			System.out.println("Test");
             if (!gs.canExecuteAnyAction(player)) return new PlayerAction();
             PlayerActionGenerator pag = new PlayerActionGenerator(gs, player);
             return pag.getRandom();
