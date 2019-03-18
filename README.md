@@ -2,20 +2,18 @@
 
 This is the base repository for COMP250 assignment 1, task 2 (MicroRTS bot).
 
-## [Tournament leaderboard](http://comp250.falmouth.games)
+## [Tournament leaderboard](http://comp250.falmouth.games) -- [Alternative link](http://10.3.153.12)
+
+Note: the tournament leaderboard is only available on campus or via VPN -- refer to the VPN access guide on the [Games Academy resource page](https://learningspace.falmouth.ac.uk/course/view.php?id=3301)
 
 ## Getting started
 
-For detailed instructions, watch [this video](https://youtu.be/pvzp8c4nZaU).
-
 * Fork this repository
-* Go to Settings -> Webhooks -> Add Webhook
-* Enter the following details:
-  - Payload URL: http://comp250.falmouth.games/hook
-  - Content type: application/json
-  - Secret: leave blank
-  - Which events: just the push event
-  - Active: yes
-  - Click Add Webhook
-* Clone your repository, making sure to also clone submodules (e.g. "Recursive" option in TortoiseGit, `--recurse-submodules` switch on command line)
-* Pushes to the master branch will automatically trigger an upload to the tournament server
+* Clone your repository, making sure to also clone submodules
+   - In TortoiseGit: in the "Git clone" dialog, ensure the "Recursive" checkbox is activated
+   - On the command line: use `git clone --recurse-submodules https://github.com/...`
+* Go to the leaderboard (link above), enter your Git repository URL in the "Add bot" box and click the "Add" button
+* To make changes to your bot:
+   - Push your changes to GitHub, in your repository's master branch
+   - Go to the leaderboard
+   - Find your bot, and click "Update now"
