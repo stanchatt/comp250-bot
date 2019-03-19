@@ -42,8 +42,9 @@ public class MyBot extends AbstractionLayerAI {
     
     @Override
     public PlayerAction getAction(int player, GameState gs) {
-        for (Unit unit : gs.getUnits())
-        {
+        PhysicalGameState pgs = gs.getPhysicalGameState();
+        
+        for (Unit unit : pgs.getUnits()) {
             // TODO: issue commands to units
         }
         
@@ -51,8 +52,7 @@ public class MyBot extends AbstractionLayerAI {
     }
     
     @Override
-    public List<ParameterSpecification> getParameters()
-    {
+    public List<ParameterSpecification> getParameters() {
         return new ArrayList<>();
     }
 }
